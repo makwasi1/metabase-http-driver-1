@@ -11,6 +11,10 @@ driver:
       display-name: Table Definitions
       type: json
       default: "{\n  \"tables\": [\n  ]\n}"
+    - name: conn-url
+      type: string
+      display-name: Paste your url here
+      placeholder: 'http://enterurl.com'
 init:
   - step: load-namespace
     namespace: metabase.driver.http
