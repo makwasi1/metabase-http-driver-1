@@ -8,10 +8,10 @@
   <name>http-driver</name>
   <description/>
   <scm>
-    <url>https://github.com/makwasi1/metabase-http-driver-1</url>
-    <connection>scm:git:git://github.com/makwasi1/metabase-http-driver-1.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/makwasi1/metabase-http-driver-1.git</developerConnection>
-    <tag>2118931021fb3cfe9dcb60582b8a3f140eb699ba</tag>
+    <url>https://github.com/tlrobinson/metabase-http-driver</url>
+    <connection>scm:git:git://github.com/tlrobinson/metabase-http-driver.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/tlrobinson/metabase-http-driver.git</developerConnection>
+    <tag>83c5402fe7864192db4a9efeb5b2afcaab28ffab</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -27,7 +27,7 @@
       </testResource>
     </testResources>
     <directory>target</directory>
-    <outputDirectory>target\classes</outputDirectory>
+    <outputDirectory>target/classes</outputDirectory>
     <plugins/>
   </build>
   <repositories>
@@ -65,12 +65,6 @@
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
       <version>1.10.1</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>clojure.java-time</groupId>
-      <artifactId>clojure.java-time</artifactId>
-      <version>0.3.2</version>
       <scope>provided</scope>
     </dependency>
     <dependency>

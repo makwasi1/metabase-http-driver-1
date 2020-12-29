@@ -12,7 +12,6 @@
   {:provided
    {:dependencies
     [[org.clojure/clojure "1.10.1"]
-     [clojure.java-time "0.3.2"]
      [metabase-core "1.0.0-SNAPSHOT"]]}
 
    :uberjar

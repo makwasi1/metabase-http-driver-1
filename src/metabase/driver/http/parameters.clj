@@ -3,7 +3,7 @@
              [string :as str]
              [walk :as walk]]
             [clojure.tools.logging :as log]
-           [java-time :as t]
+            [java-time :as t]
             [metabase.driver.common.parameters :as params]
             [metabase.driver.common.parameters
              [dates :as date-params]
@@ -21,8 +21,8 @@
 (defn- ->utc-instant [t]
   (t/instant
    (condp instance? t
-     java.time.LocalDate     (t/zoned-date-time t (t/local-time "00:00") (t/zone-id "UTC +3"))
-     java.time.LocalDateTime (t/zoned-date-time t (t/zone-id "UTC +3"))
+     java.time.LocalDate     (t/zoned-date-time t (t/local-time "00:00") (t/zone-id "UTC"))
+     java.time.LocalDateTime (t/zoned-date-time t (t/zone-id "UTC"))
      t)))
 
 (defn- param-value->str
